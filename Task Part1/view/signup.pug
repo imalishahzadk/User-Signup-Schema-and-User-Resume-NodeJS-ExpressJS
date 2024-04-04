@@ -1,0 +1,31 @@
+html 
+
+  head
+  style
+    include input_data.css
+    title User SignUp
+  body   
+    form(method="post")
+      h1 Please! Enter your data...
+      label(for='name') Name:
+      input#username(type='text' name='name' placeholder='First,Last')
+      label(for='contact') City Name:
+      input#contact(type='text' name='cityName' placeholder='Islamabad')
+      label(for='contact') City Code:
+      input#contact(type='digit' name='cityNo' placeholder='010012')
+      label(for='address') Occupation:
+      input#address(type='text' name='occupation')
+      h2
+        | Gender
+        h2
+          input#male(type='radio' checked='' name='gender' value='Male')
+          label.male(for='male') Male 
+          input#female(type='radio' name='gender' value='Female')
+          label.female(for='female') Female
+          h2
+            | Date of Birth
+            h2
+              label(for='dob') DOB
+              input#dob(type='date' name='dob')
+              input#submit.btn(type='submit' name='id' value='Submit Form')
+              input.btn1(type='reset' name='id' value='Reset')
